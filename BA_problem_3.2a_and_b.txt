@@ -1,0 +1,22 @@
+/****************************************
+S. Barclay
+Biostatistical Analysis 4th Ed. 
+Zar. 1999.
+Problem 3.2 a and b
+
+Given data from 5 subjects, calculate 
+mean and median weights
+****************************************/
+
+data zar3_2;
+	input x;
+datalines;
+3.1
+3.4
+3.6
+3.7
+4.0
+;
+proc means mean median data=zar3_2;
+	var x;
+run;

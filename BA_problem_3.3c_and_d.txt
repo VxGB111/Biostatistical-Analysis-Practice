@@ -1,0 +1,27 @@
+/****************************************
+S. Barclay
+Biostatistical Analysis 4th Ed. 
+Zar. 1999.
+Problem 3.3 c and d
+
+Using data from part a &b, replace 
+datapoint 65.0 with 46.5, calculate 
+mean and median ages.
+****************************************/
+
+data zar3_3;
+	input x;
+datalines;
+32.2
+37.5
+41.7
+53.8
+50.2
+48.2
+46.3
+46.5
+44.8
+;
+proc means mean median data=zar3_3;
+	var x;
+run;
